@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+.cont{
+  max-width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 10px 0 10px;
+}
+header img{
+  width: 156px;
+  height: 156px;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #4E5150;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+}
+.info{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 100px;
+  height: 65px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #E5E5E5;
+}
+.count {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #4E5150;
+}
+.type {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #BDBDBD;
+}
+.gallery-cont {
+  margin: 64px 0;
+  display: grid;
+  width: 100%;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "one two two"
+    "three three four"
+    "five six four";
+}
+
+.gallery-cont div {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.photo1 {
+  grid-area: one;
+  background-image: url("photos/photo1.png");
+}
+
+.photo2 {
+  grid-area: two;
+  background-image: url("photos/photo2.png");
+}
+
+.photo3 {
+  grid-area: three;
+  background-image: url("photos/photo3.png");
+}
+
+.photo4 {
+  grid-area: four;
+  background-image: url("photos/photo4.png");
+}
+
+.photo5 {
+  grid-area: five;
+  background-image: url("photos/photo5.png");
+}
+
+.photo6 {
+  grid-area: six;
+  background-image: url("photos/photo6.png");
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (max-width:800px) {
+  .gallery-cont{
+    gap:10px;
+  }
+}
